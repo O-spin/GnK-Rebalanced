@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Piety",
-		"era": "Classical era",
+		"era": "Ancient era",
 		"priorities": {
 			"Neutral": 0,
 			"Cultural": 0,
@@ -26,13 +26,16 @@
 			},
 			{
 				"name": "Mandate Of Heaven",
-				"uniques": ["[50]% of excess happiness converted to [Culture]"],
+				"uniques": ["[100]% of excess happiness converted to [Culture]"], // Up from 50%
 				"row": 1,
 				"column": 5
 			},
 			{
 				"name": "Theocracy",
-				"uniques": ["[+10]% [Gold] from every [Temple]"],
+				"uniques": [
+					"[+25]% [Gold] from every [Temple]", // Up from 10%
+					"[Faith] cost of purchasing items in cities [-20]%" // Moved from finisher
+			],
 				"requires": ["Organized Religion"],
 				"row": 2,
 				"column": 1
@@ -40,7 +43,7 @@
 			{
 				"name": "Reformation",
 				"uniques": [
-					"[+33]% [Culture] [in all cities with a world wonder]",
+					"[+50]% [Culture] [in all cities with a world wonder]", // Up from 33%
 					"Empire enters golden age"
 				],
 				"requires": ["Organized Religion"],
@@ -49,7 +52,7 @@
 			},
 			{
 				"name": "Free Religion",
-				"uniques": ["[-10]% Culture cost of adopting new Policies"],
+				"uniques": ["[-15]% Culture cost of adopting new Policies"], // Up from 10%
 				"requires": [
 					"Mandate Of Heaven",
 					"Reformation"
@@ -60,8 +63,7 @@
 			{
 				"name": "Piety Complete",
 				"uniques": [
-					"[Faith] cost of purchasing items in cities [-20]%",
-					"[+3 Gold, +3 Culture] from every [Holy site]",
+					"[+3 Faith, +3 Gold, +3 Culture] from every [Holy site]", // Added +3 faith
 					"Get the leader title of [[leaderName] the Pious]"
 				]
 			}
