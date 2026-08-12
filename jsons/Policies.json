@@ -63,6 +63,8 @@
 			{
 				"name": "Piety Complete",
 				"uniques": [
+					"Gain a free [Any] belief <hidden from users>",
+					"Comment [Gain a free belief of any type]",
 					"[+3 Faith, +3 Gold, +3 Culture] from every [Holy site]", // Added +3 faith
 					"Get the leader title of [[leaderName] the Pious]"
 				]
