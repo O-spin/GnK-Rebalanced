@@ -291,6 +291,7 @@
 		"uniques": ["[-33]% Strength <vs cities> <when attacking>"], // Archery weak vs cities
 		"attackSound": "arrow"
 	},
+	//Siege rework
 	{
 		"name": "Trebuchet",
 		"unitType": "Siege",
@@ -368,6 +369,7 @@
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
+	// Boat Reworks
 	{
 		"name": "Galley",
 		"unitType": "Melee Water",
@@ -379,5 +381,64 @@
 		"upgradesTo": "Galleass", // Changed from Trireme to buff Ottomans
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Dromon",
+		"unitType": "Ranged Water",
+		"uniqueTo": "Byzantium",
+		"replaces": "Trireme",
+		"movement": 4,
+		"strength": 6, // From 8
+		"rangedStrength": 10,
+		"cost": 56,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles"], // Removed +50% strength vs water units
+		"upgradesTo": "Galleass",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Galleass",
+		"unitType": "Ranged Water",
+		"movement": 3,
+		"strength": 14, // From 16
+		"rangedStrength": 16, // From 17
+		"cost": 100,
+		"requiredTech": "Compass",
+		"obsoleteTech": "Navigation",
+		"upgradesTo": "Frigate",
+		"uniques": ["Cannot enter ocean tiles"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Frigate",
+		"unitType": "Ranged Water",
+		"movement": 4, // From 5
+		"strength": 21, // From 25
+		"rangedStrength": 24, // from 28
+		"cost": 185,
+		"requiredResource": "Iron",
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"attackSound": "shipCannonVolley"
+	},
+	{
+		"name": "Ship of the Line",
+		"unitType": "Ranged Water",
+		"replaces": "Frigate",
+		"uniqueTo": "England",
+		"movement": 3, // From 5
+		"strength": 25, // From 30
+		"rangedStrength": 28, // from 35
+		"cost": 185,
+		"requiredResource": "Iron",
+		"uniques": ["[+1] Sight"],
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"attackSound": "shipCannonVolley"
 	},
 ]
